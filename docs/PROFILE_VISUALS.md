@@ -82,6 +82,11 @@ The live profile uses the committed version:
 <img src="assets/badges/python.svg" alt="Python" height="28">
 ```
 
+The live README uses direct `raw.githubusercontent.com` URLs with
+`?v=matte-ash-gray`. GitHub's relative-image redirect drops query strings,
+which can leave older artwork in a visitor's browser cache. When changing
+the palette again, update that version value in the live image URLs.
+
 ## Project showcases and real demo media
 
 The README already links each diagram to a project through its heading.
