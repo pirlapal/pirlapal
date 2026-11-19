@@ -1,9 +1,9 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/header-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="Pranav Kishor Irlapale — software engineering and applied AI. Connecting data and documents through APIs and tools to AI workflows." src="assets/header-light.svg" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/header-mobile-dark.svg?v=navy-copper">
+  <source media="(max-width: 600px)" srcset="assets/header-mobile-light.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg?v=navy-copper">
+  <img alt="Pranav Kishor Irlapale — software engineering and applied AI. Connecting data and documents through APIs and tools to AI workflows." src="assets/header-light.svg?v=navy-copper" width="1200">
 </picture>
 
 # Hi, I'm Pranav Kishor Irlapale
@@ -28,11 +28,11 @@ automation at ASU's AI CIC.
 ### [PlanAI — AI Agent Swarm Checker](https://github.com/pirlapal/AI-agent-Swarm-checker)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/planai-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/planai-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/planai-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/planai-light.svg">
-  <img alt="PlanAI architecture: case documents and review rules feed a Python orchestrator with category agents, producing structured findings." src="assets/planai-light.svg" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/planai-mobile-dark.svg?v=navy-copper">
+  <source media="(max-width: 600px)" srcset="assets/planai-mobile-light.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/planai-dark.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: light)" srcset="assets/planai-light.svg?v=navy-copper">
+  <img alt="PlanAI architecture: case documents and review rules feed a Python orchestrator with category agents, producing structured findings." src="assets/planai-light.svg?v=navy-copper" width="1200">
 </picture>
 
 A document-review prototype that lets users define review rules,
@@ -59,11 +59,11 @@ architecture, setup, and prototype limitations.
 ### [Resume Screening Dashboard](https://github.com/pirlapal/Resume-Screening-Dashboard)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/dashboard-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/dashboard-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/dashboard-light.svg">
-  <img alt="Dashboard architecture: fictional demo records or optional Google Sheets records pass through FastAPI validation into a Next.js review interface." src="assets/dashboard-light.svg" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/dashboard-mobile-dark.svg?v=navy-copper">
+  <source media="(max-width: 600px)" srcset="assets/dashboard-mobile-light.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: light)" srcset="assets/dashboard-light.svg?v=navy-copper">
+  <img alt="Dashboard architecture: fictional demo records or optional Google Sheets records pass through FastAPI validation into a Next.js review interface." src="assets/dashboard-light.svg?v=navy-copper" width="1200">
 </picture>
 
 A recruiter-facing application for browsing candidate evaluations,
@@ -89,11 +89,11 @@ system.
 ### [Lumos Language](https://github.com/pirlapal/Lumos-Language)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/lumos-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/lumos-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/lumos-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/lumos-light.svg">
-  <img alt="Lumos pipeline: source code passes through a lexer, parser, abstract syntax tree, and interpreter." src="assets/lumos-light.svg" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/lumos-mobile-dark.svg?v=navy-copper">
+  <source media="(max-width: 600px)" srcset="assets/lumos-mobile-light.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lumos-dark.svg?v=navy-copper">
+  <source media="(prefers-color-scheme: light)" srcset="assets/lumos-light.svg?v=navy-copper">
+  <img alt="Lumos pipeline: source code passes through a lexer, parser, abstract syntax tree, and interpreter." src="assets/lumos-light.svg?v=navy-copper" width="1200">
 </picture>
 
 An educational programming language implemented in Python, with a
@@ -111,12 +111,12 @@ documented in the repository.
 ## Tools I work with
 
 <p>
-  <img src="assets/badges/python.svg" alt="Python" height="28">
-  <img src="assets/badges/typescript.svg" alt="TypeScript" height="28">
-  <img src="assets/badges/java.svg" alt="Java" height="28">
-  <img src="assets/badges/fastapi.svg" alt="FastAPI" height="28">
-  <img src="assets/badges/nextjs.svg" alt="Next.js" height="28">
-  <img src="assets/badges/aws.svg" alt="AWS" height="28">
+  <img src="assets/badges/python.svg?v=navy-copper" alt="Python" height="28">
+  <img src="assets/badges/typescript.svg?v=navy-copper" alt="TypeScript" height="28">
+  <img src="assets/badges/java.svg?v=navy-copper" alt="Java" height="28">
+  <img src="assets/badges/fastapi.svg?v=navy-copper" alt="FastAPI" height="28">
+  <img src="assets/badges/nextjs.svg?v=navy-copper" alt="Next.js" height="28">
+  <img src="assets/badges/aws.svg?v=navy-copper" alt="AWS" height="28">
 </p>
 
 - **Languages:** Python, TypeScript, Java

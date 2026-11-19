@@ -5,6 +5,9 @@ The source is [README.md](../README.md). All active images are stored in
 this repository. The profile needs no paid service, API key, or image
 generation account to render.
 
+The current palette uses deep navy and warm copper in dark mode, with
+ivory, ink blue, and soft copper in light mode. Technology badges use navy.
+
 ## Included in this update
 
 | Addition | Purpose | Source / exact place to edit |
@@ -68,7 +71,7 @@ technologies used in the projects. To add another badge, generate it with
 For example, this is the direct Python badge source:
 
 ```markdown
-![Python](https://img.shields.io/badge/Python-244b40?style=flat-square&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-243a5c?style=flat-square&logo=python&logoColor=white)
 ```
 
 The live profile uses the committed version:
@@ -123,7 +126,7 @@ bottom. This optional service visualizes the last 31 days of activity:
 ```markdown
 ## Recent activity
 
-[![Pranav's recent GitHub activity](https://github-readme-activity-graph.vercel.app/graph?username=pirlapal&bg_color=132b24&color=f0f5e9&line=b2d88d&point=d7edb8&area=true&hide_border=true)](https://github.com/pirlapal)
+[![Pranav's recent GitHub activity](https://github-readme-activity-graph.vercel.app/graph?username=pirlapal&bg_color=101d35&color=f5f0e8&line=e8a06a&point=f1bf97&area=true&hide_border=true)](https://github.com/pirlapal)
 ```
 
 Source and configuration:

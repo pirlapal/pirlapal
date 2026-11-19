@@ -25,17 +25,17 @@ FONT = ASSETS / "fonts" / "Manrope.ttf"
 DOWNLOADS = {
     "fonts/Manrope.ttf": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
     "fonts/OFL.txt": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
-    "badges/python.svg": "https://img.shields.io/badge/Python-244b40?style=flat-square&logo=python&logoColor=white",
-    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-244b40?style=flat-square&logo=typescript&logoColor=white",
-    "badges/aws.svg": "https://img.shields.io/badge/AWS-244b40?style=flat-square",
-    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-244b40?style=flat-square&logo=fastapi&logoColor=white",
-    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-244b40?style=flat-square&logo=nextdotjs&logoColor=white",
-    "badges/java.svg": "https://img.shields.io/badge/Java-244b40?style=flat-square",
+    "badges/python.svg": "https://img.shields.io/badge/Python-243a5c?style=flat-square&logo=python&logoColor=white",
+    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-243a5c?style=flat-square&logo=typescript&logoColor=white",
+    "badges/aws.svg": "https://img.shields.io/badge/AWS-243a5c?style=flat-square",
+    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-243a5c?style=flat-square&logo=fastapi&logoColor=white",
+    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-243a5c?style=flat-square&logo=nextdotjs&logoColor=white",
+    "badges/java.svg": "https://img.shields.io/badge/Java-243a5c?style=flat-square",
 }
 
 THEMES = {
-    "light": {"bg": "#f4f3ec", "ink": "#173d32", "muted": "#49665a", "line": "#6b8673", "panel": "#e4eadf", "accent": "#d7edb8"},
-    "dark": {"bg": "#132b24", "ink": "#f0f5e9", "muted": "#b2c8b9", "line": "#5c7e6a", "panel": "#234338", "accent": "#d7edb8"},
+    "light": {"bg": "#faf5ed", "ink": "#172944", "muted": "#53647c", "line": "#71829b", "panel": "#e8edf5", "accent": "#f1bf97", "accentInk": "#442814"},
+    "dark": {"bg": "#101d35", "ink": "#f5f0e8", "muted": "#becbe0", "line": "#8c9fbd", "panel": "#1d3355", "accent": "#e8a06a", "accentInk": "#22170f"},
 }
 
 
@@ -111,7 +111,7 @@ def header(theme, t, lettering):
         text("APIs + tools", 963, 196, 26, ink, 600, "middle"),
         '<path d="M963 224v27m-7-8 7 8 7-8" fill="none" stroke="' + t["line"] + '" stroke-width="2.5"/>',
         rect(793, 255, 340, 58, t["accent"], 12),
-        text("AI workflows", 963, 293, 26, "#173d32", 750, "middle"),
+        text("AI workflows", 963, 293, 26, t["accentInk"], 750, "middle"),
     ]
     return svg("Pranav Irlapale — software engineering and applied AI", "Pranav Irlapale. Software engineering and applied AI. Data and documents connect through APIs and tools to AI workflows.", 1200, 352, body)
 
@@ -138,7 +138,7 @@ def mobile_header(t, lettering):
     body = [rect(0, 0, 600, 260, t["bg"], 12)]
     body += [text("Pranav Irlapale", 32, 86, 56, t["ink"], 750, tracking=-1.2), text("Software engineering + applied AI", 34, 138, 25, t["muted"])]
     for index, (x, label) in enumerate(((32, "Data"), (240, "APIs"), (448, "AI"))):
-        body += [rect(x, 176, 120, 56, t["accent"] if index == 2 else t["panel"], 10), text(label, x + 60, 212, 25, "#173d32" if index == 2 else t["ink"], 600, "middle")]
+        body += [rect(x, 176, 120, 56, t["accent"] if index == 2 else t["panel"], 10), text(label, x + 60, 212, 25, t["accentInk"] if index == 2 else t["ink"], 600, "middle")]
         if index < 2:
             body += [arrow(x + 136, x + 192, 204, t["line"])]
     return svg("Pranav Irlapale — software engineering and applied AI", "Pranav Irlapale. Software engineering and applied AI. Data connects through APIs to AI workflows.", 600, 260, body)
@@ -165,7 +165,7 @@ def mobile_lumos(t, lettering):
     body = [rect(0, 0, 600, 464, t["bg"], 12)]
     for index, label in enumerate(("Source", "Lexer", "Parser", "AST", "Interpreter")):
         y = 20 + index * 90
-        body += [rect(100, y, 400, 64, t["accent"] if index == 4 else t["panel"], 12), lettering.text(label, 300, y + 42, 28, "#173d32" if index == 4 else t["ink"], 750, "middle")]
+        body += [rect(100, y, 400, 64, t["accent"] if index == 4 else t["panel"], 12), lettering.text(label, 300, y + 42, 28, t["accentInk"] if index == 4 else t["ink"], 750, "middle")]
         if index < 4:
             body += [f'<path d="M300 {y + 69}v16m-6-6 6 6 6-6" fill="none" stroke="{t["line"]}" stroke-width="2.5"/>']
     return svg("Lumos interpreter pipeline", "Source, lexer, parser, abstract syntax tree, and interpreter, shown vertically.", 600, 464, body)
@@ -176,7 +176,7 @@ def lumos(t, lettering):
     body = [rect(0, 0, 1200, 190, t["bg"], 12)]
     stages = [(40, "Source"), (272, "Lexer"), (504, "Parser"), (736, "AST"), (968, "Interpreter")]
     for index, (x, label) in enumerate(stages):
-        body += [rect(x, 54, 192, 82, t["accent"] if index == 4 else t["panel"], 12), text(label, x + 96, 104, 25, "#173d32" if index == 4 else t["ink"], 750, "middle")]
+        body += [rect(x, 54, 192, 82, t["accent"] if index == 4 else t["panel"], 12), text(label, x + 96, 104, 25, t["accentInk"] if index == 4 else t["ink"], 750, "middle")]
         if index < 4:
             body += [arrow(x + 204, x + 220, 95, t["line"])]
     return svg("Lumos interpreter pipeline", "Lumos source passes through a handwritten lexer, recursive-descent parser, abstract syntax tree, and tree-walking interpreter.", 1200, 190, body)
