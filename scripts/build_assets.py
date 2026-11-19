@@ -27,25 +27,25 @@ FONT = ASSETS / "fonts" / "Manrope.ttf"
 DOWNLOADS = {
     "fonts/Manrope.ttf": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
     "fonts/OFL.txt": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
-    "badges/python.svg": "https://img.shields.io/badge/Python-BC8F8F?style=flat-square&logo=python&logoColor=292326",
-    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-BC8F8F?style=flat-square&logo=typescript&logoColor=292326",
-    "badges/aws.svg": "https://img.shields.io/badge/AWS-BC8F8F?style=flat-square",
-    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-BC8F8F?style=flat-square&logo=fastapi&logoColor=292326",
-    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-BC8F8F?style=flat-square&logo=nextdotjs&logoColor=292326",
-    "badges/java.svg": "https://img.shields.io/badge/Java-BC8F8F?style=flat-square",
+    "badges/python.svg": "https://img.shields.io/badge/Python-B2BEB5?style=flat-square&logo=python&logoColor=252b28",
+    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-B2BEB5?style=flat-square&logo=typescript&logoColor=252b28",
+    "badges/aws.svg": "https://img.shields.io/badge/AWS-B2BEB5?style=flat-square",
+    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-B2BEB5?style=flat-square&logo=fastapi&logoColor=252b28",
+    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-B2BEB5?style=flat-square&logo=nextdotjs&logoColor=252b28",
+    "badges/java.svg": "https://img.shields.io/badge/Java-B2BEB5?style=flat-square",
 }
 
-MATTE_ROSE = {
-    "bg": "#BC8F8F",
-    "ink": "#292326",
-    "muted": "#3e2c31",
-    "line": "#5a3e46",
-    "panel": "#F5ECE8",
-    "accent": "#E2C9C5",
-    "accentInk": "#292326",
+MATTE_ASH_GRAY = {
+    "bg": "#B2BEB5",
+    "ink": "#252b28",
+    "muted": "#39443e",
+    "line": "#526258",
+    "panel": "#F6F5F0",
+    "accent": "#D0D8D2",
+    "accentInk": "#252b28",
 }
 # The user requested light, matte artwork even when GitHub is in dark mode.
-THEMES = {theme: dict(MATTE_ROSE) for theme in ("light", "dark")}
+THEMES = {theme: dict(MATTE_ASH_GRAY) for theme in ("light", "dark")}
 
 
 def download(item):
@@ -63,7 +63,7 @@ def download(item):
 
 def recolor_badges():
     """Keep both downloaded and committed badges readable on the matte ground."""
-    background, foreground = MATTE_ROSE["bg"], MATTE_ROSE["ink"]
+    background, foreground = MATTE_ASH_GRAY["bg"], MATTE_ASH_GRAY["ink"]
     for path in (ASSETS / "badges").glob("*.svg"):
         contents = path.read_text()
         contents = re.sub(r'(<rect\b[^>]*\bfill=")[^"]+(")', lambda m: m[1] + background + m[2], contents)
