@@ -1,7 +1,17 @@
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/header-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/header-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+  <img alt="Pranav Kishor Irlapale — software engineering and applied AI. Connecting data and documents through APIs and tools to AI workflows." src="assets/header-light.svg" width="1200">
+</picture>
+
 # Hi, I'm Pranav Kishor Irlapale
 
 **Software engineer focused on GenAI applications, backend systems,
 and workflow automation.**
+
+[Email](mailto:irlapalepranav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pranav-irlapale) · [Selected projects](#selected-projects)
 
 I'm pursuing an MS in Software Engineering at Arizona State University,
 with an expected graduation in May 2027.
@@ -17,40 +27,74 @@ automation at ASU's AI CIC.
 
 ### [PlanAI — AI Agent Swarm Checker](https://github.com/pirlapal/AI-agent-Swarm-checker)
 
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/planai-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/planai-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/planai-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/planai-light.svg">
+  <img alt="PlanAI architecture: case documents and review rules feed a Python orchestrator with category agents, producing structured findings." src="assets/planai-light.svg" width="1200">
+</picture>
+
 A document-review prototype that lets users define review rules,
 attach documents, and follow agent progress and structured findings.
 
 **My role:** Co-creator in a two-person Kiro Spark Challenge team.
 
+**Stack:** Python, TypeScript, Next.js, AWS CDK, Lambda, API Gateway,
+DynamoDB, S3, and Bedrock AgentCore.
+
+<details>
+<summary>Architecture and running locally</summary>
+
 The project combines a Python agent orchestrator, a Next.js interface,
 WebSocket progress updates, and AWS infrastructure for workflow records,
 document storage, and model-backed execution.
-
-**Stack:** Python, TypeScript, Next.js, AWS CDK, Lambda, API Gateway,
-DynamoDB, S3, and Bedrock AgentCore.
 
 The interface can be previewed locally. Running document reviews
 requires a configured AWS deployment. The README documents the
 architecture, setup, and prototype limitations.
 
+</details>
+
 ### [Resume Screening Dashboard](https://github.com/pirlapal/Resume-Screening-Dashboard)
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/dashboard-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/dashboard-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/dashboard-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/dashboard-light.svg">
+  <img alt="Dashboard architecture: fictional demo records or optional Google Sheets records pass through FastAPI validation into a Next.js review interface." src="assets/dashboard-light.svg" width="1200">
+</picture>
 
 A recruiter-facing application for browsing candidate evaluations,
 filtering applications, inspecting records, and managing review status.
 
 **My role:** Backend Lead on the original team project.
 
+**Stack:** Python, FastAPI, Next.js, TypeScript, and Google Sheets.
+
+<details>
+<summary>Public demo and implemented scope</summary>
+
 The public edition includes a FastAPI data adapter, score validation,
 reviewer authentication, automated checks, and a local demo with
 fictional candidates.
-
-**Stack:** Python, FastAPI, Next.js, TypeScript, and Google Sheets.
 
 This repository handles the review interface and data integration.
 Resume parsing and model-based scoring belong to the broader original
 system.
 
+</details>
+
 ### [Lumos Language](https://github.com/pirlapal/Lumos-Language)
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/lumos-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/lumos-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lumos-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/lumos-light.svg">
+  <img alt="Lumos pipeline: source code passes through a lexer, parser, abstract syntax tree, and interpreter." src="assets/lumos-light.svg" width="1200">
+</picture>
 
 An educational programming language implemented in Python, with a
 handwritten lexer, parser, abstract syntax tree, and interpreter.
@@ -65,6 +109,15 @@ Developed as a team course project, with individual contributions
 documented in the repository.
 
 ## Tools I work with
+
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28">
+  <img src="assets/badges/typescript.svg" alt="TypeScript" height="28">
+  <img src="assets/badges/java.svg" alt="Java" height="28">
+  <img src="assets/badges/fastapi.svg" alt="FastAPI" height="28">
+  <img src="assets/badges/nextjs.svg" alt="Next.js" height="28">
+  <img src="assets/badges/aws.svg" alt="AWS" height="28">
+</p>
 
 - **Languages:** Python, TypeScript, Java
 - **Backend:** FastAPI, REST APIs, WebSockets
