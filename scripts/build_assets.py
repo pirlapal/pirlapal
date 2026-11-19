@@ -34,7 +34,7 @@ DOWNLOADS = {
 }
 
 THEMES = {
-    "light": {"bg": "#f4f3ec", "ink": "#173d32", "muted": "#49665a", "line": "#a7bbae", "panel": "#e4eadf", "accent": "#d7edb8"},
+    "light": {"bg": "#f4f3ec", "ink": "#173d32", "muted": "#49665a", "line": "#6b8673", "panel": "#e4eadf", "accent": "#d7edb8"},
     "dark": {"bg": "#132b24", "ink": "#f0f5e9", "muted": "#b2c8b9", "line": "#5c7e6a", "panel": "#234338", "accent": "#d7edb8"},
 }
 
