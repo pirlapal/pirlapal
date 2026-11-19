@@ -1,9 +1,9 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/header-mobile-dark.svg?v=matte-ash-gray">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/header-mobile-light.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/header-dark.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/header-light.svg?v=matte-ash-gray">
-  <img alt="Pranav Kishor Irlapale — software engineering and applied AI. Connecting data and documents through APIs and tools to AI workflows." src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/header-light.svg?v=matte-ash-gray" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/header-mobile-dark.svg?v=matte-ash-gray">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/header-mobile-light.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/header-dark.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/header-light.svg?v=matte-ash-gray">
+  <img alt="Pranav Kishor Irlapale — software engineering and applied AI. Connecting data and documents through APIs and tools to AI workflows." src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/header-light.svg?v=matte-ash-gray" width="1200">
 </picture>
 
 # Hi, I'm Pranav Kishor Irlapale
@@ -28,11 +28,11 @@ automation at ASU's AI CIC.
 ### [PlanAI — AI Agent Swarm Checker](https://github.com/pirlapal/AI-agent-Swarm-checker)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/planai-mobile-dark.svg?v=matte-ash-gray">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/planai-mobile-light.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/planai-dark.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/planai-light.svg?v=matte-ash-gray">
-  <img alt="PlanAI architecture: case documents and review rules feed a Python orchestrator with category agents, producing structured findings." src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/planai-light.svg?v=matte-ash-gray" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/planai-mobile-dark.svg?v=matte-ash-gray">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/planai-mobile-light.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/planai-dark.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/planai-light.svg?v=matte-ash-gray">
+  <img alt="PlanAI architecture: case documents and review rules feed a Python orchestrator with category agents, producing structured findings." src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/planai-light.svg?v=matte-ash-gray" width="1200">
 </picture>
 
 A document-review prototype that lets users define review rules,
@@ -59,11 +59,11 @@ architecture, setup, and prototype limitations.
 ### [Resume Screening Dashboard](https://github.com/pirlapal/Resume-Screening-Dashboard)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/dashboard-mobile-dark.svg?v=matte-ash-gray">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/dashboard-mobile-light.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/dashboard-dark.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/dashboard-light.svg?v=matte-ash-gray">
-  <img alt="Dashboard architecture: fictional demo records or optional Google Sheets records pass through FastAPI validation into a Next.js review interface." src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/dashboard-light.svg?v=matte-ash-gray" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/dashboard-mobile-dark.svg?v=matte-ash-gray">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/dashboard-mobile-light.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/dashboard-dark.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/dashboard-light.svg?v=matte-ash-gray">
+  <img alt="Dashboard architecture: fictional demo records or optional Google Sheets records pass through FastAPI validation into a Next.js review interface." src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/dashboard-light.svg?v=matte-ash-gray" width="1200">
 </picture>
 
 A recruiter-facing application for browsing candidate evaluations,
@@ -89,11 +89,11 @@ system.
 ### [Lumos Language](https://github.com/pirlapal/Lumos-Language)
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/lumos-mobile-dark.svg?v=matte-ash-gray">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/lumos-mobile-light.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/lumos-dark.svg?v=matte-ash-gray">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/lumos-light.svg?v=matte-ash-gray">
-  <img alt="Lumos pipeline: source code passes through a lexer, parser, abstract syntax tree, and interpreter." src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/lumos-light.svg?v=matte-ash-gray" width="1200">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/lumos-mobile-dark.svg?v=matte-ash-gray">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/lumos-mobile-light.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/lumos-dark.svg?v=matte-ash-gray">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/lumos-light.svg?v=matte-ash-gray">
+  <img alt="Lumos pipeline: source code passes through a lexer, parser, abstract syntax tree, and interpreter." src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/lumos-light.svg?v=matte-ash-gray" width="1200">
 </picture>
 
 An educational programming language implemented in Python, with a
@@ -111,12 +111,12 @@ documented in the repository.
 ## Tools I work with
 
 <p>
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/python.svg?v=matte-ash-gray" alt="Python" height="28">
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/typescript.svg?v=matte-ash-gray" alt="TypeScript" height="28">
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/java.svg?v=matte-ash-gray" alt="Java" height="28">
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/fastapi.svg?v=matte-ash-gray" alt="FastAPI" height="28">
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/nextjs.svg?v=matte-ash-gray" alt="Next.js" height="28">
-  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/main/assets/badges/aws.svg?v=matte-ash-gray" alt="AWS" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/python.svg?v=matte-ash-gray" alt="Python" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/typescript.svg?v=matte-ash-gray" alt="TypeScript" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/java.svg?v=matte-ash-gray" alt="Java" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/fastapi.svg?v=matte-ash-gray" alt="FastAPI" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/nextjs.svg?v=matte-ash-gray" alt="Next.js" height="28">
+  <img src="https://raw.githubusercontent.com/pirlapal/pirlapal/8c2b91cba0af67f1f39b623a125722e7515c8c04/assets/badges/aws.svg?v=matte-ash-gray" alt="AWS" height="28">
 </p>
 
 - **Languages:** Python, TypeScript, Java
