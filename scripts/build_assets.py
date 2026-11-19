@@ -7,9 +7,11 @@ Subsequent runs use the committed assets and require no network access.
 from __future__ import annotations
 
 import argparse
+import base64
 from concurrent.futures import ThreadPoolExecutor
 from html import escape
 from pathlib import Path
+import re
 from urllib.request import Request, urlopen
 
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -25,18 +27,25 @@ FONT = ASSETS / "fonts" / "Manrope.ttf"
 DOWNLOADS = {
     "fonts/Manrope.ttf": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
     "fonts/OFL.txt": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
-    "badges/python.svg": "https://img.shields.io/badge/Python-243a5c?style=flat-square&logo=python&logoColor=white",
-    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-243a5c?style=flat-square&logo=typescript&logoColor=white",
-    "badges/aws.svg": "https://img.shields.io/badge/AWS-243a5c?style=flat-square",
-    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-243a5c?style=flat-square&logo=fastapi&logoColor=white",
-    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-243a5c?style=flat-square&logo=nextdotjs&logoColor=white",
-    "badges/java.svg": "https://img.shields.io/badge/Java-243a5c?style=flat-square",
+    "badges/python.svg": "https://img.shields.io/badge/Python-BC8F8F?style=flat-square&logo=python&logoColor=292326",
+    "badges/typescript.svg": "https://img.shields.io/badge/TypeScript-BC8F8F?style=flat-square&logo=typescript&logoColor=292326",
+    "badges/aws.svg": "https://img.shields.io/badge/AWS-BC8F8F?style=flat-square",
+    "badges/fastapi.svg": "https://img.shields.io/badge/FastAPI-BC8F8F?style=flat-square&logo=fastapi&logoColor=292326",
+    "badges/nextjs.svg": "https://img.shields.io/badge/Next.js-BC8F8F?style=flat-square&logo=nextdotjs&logoColor=292326",
+    "badges/java.svg": "https://img.shields.io/badge/Java-BC8F8F?style=flat-square",
 }
 
-THEMES = {
-    "light": {"bg": "#faf5ed", "ink": "#172944", "muted": "#53647c", "line": "#71829b", "panel": "#e8edf5", "accent": "#f1bf97", "accentInk": "#442814"},
-    "dark": {"bg": "#101d35", "ink": "#f5f0e8", "muted": "#becbe0", "line": "#8c9fbd", "panel": "#1d3355", "accent": "#e8a06a", "accentInk": "#22170f"},
+MATTE_ROSE = {
+    "bg": "#BC8F8F",
+    "ink": "#292326",
+    "muted": "#3e2c31",
+    "line": "#5a3e46",
+    "panel": "#F5ECE8",
+    "accent": "#E2C9C5",
+    "accentInk": "#292326",
 }
+# The user requested light, matte artwork even when GitHub is in dark mode.
+THEMES = {theme: dict(MATTE_ROSE) for theme in ("light", "dark")}
 
 
 def download(item):
@@ -50,6 +59,23 @@ def download(item):
         raise ValueError(f"Expected an SVG badge: {name}")
     target.write_bytes(content)
     return name
+
+
+def recolor_badges():
+    """Keep both downloaded and committed badges readable on the matte ground."""
+    background, foreground = MATTE_ROSE["bg"], MATTE_ROSE["ink"]
+    for path in (ASSETS / "badges").glob("*.svg"):
+        contents = path.read_text()
+        contents = re.sub(r'(<rect\b[^>]*\bfill=")[^"]+(")', lambda m: m[1] + background + m[2], contents)
+        contents = re.sub(r'(<g\b[^>]*\bfill=")[^"]+(")', lambda m: m[1] + foreground + m[2], contents)
+
+        def logo(match):
+            decoded = base64.b64decode(match[1]).decode()
+            decoded = re.sub(r'fill="(?:white|#[0-9a-fA-F]{3,6})"', f'fill="{foreground}"', decoded)
+            return "data:image/svg+xml;base64," + base64.b64encode(decoded.encode()).decode()
+
+        contents = re.sub(r'data:image/svg\+xml;base64,([^"]+)', logo, contents)
+        path.write_text(contents)
 
 
 class Lettering:
@@ -192,6 +218,7 @@ def main():
                 print("Downloaded", name)
     if not FONT.is_file():
         parser.error("Manrope is missing. Run once with --download.")
+    recolor_badges()
     lettering = Lettering()
     for theme, colors in THEMES.items():
         for name, contents in {

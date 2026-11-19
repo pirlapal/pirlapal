@@ -5,8 +5,10 @@ The source is [README.md](../README.md). All active images are stored in
 this repository. The profile needs no paid service, API key, or image
 generation account to render.
 
-The current palette uses deep navy and warm copper in dark mode, with
-ivory, ink blue, and soft copper in light mode. Technology badges use navy.
+The current palette uses the matte dusty rose `#BC8F8F` from the supplied
+reference, soft ivory `#F5ECE8`, and charcoal text `#292326`. The artwork
+stays light and matte in both GitHub themes. Technology badges use the
+same rose with dark text and icons.
 
 ## Included in this update
 
@@ -17,7 +19,7 @@ ivory, ink blue, and soft copper in light mode. Technology badges use navy.
 | Technology badges | Makes the core stack easy to scan | `assets/badges/`, the Tools section in `README.md` |
 | Contact navigation | Gives readers a direct next action | Top Email, LinkedIn, and project links in `README.md` |
 | Expandable project details | Keeps the initial scan short while preserving technical scope | `<details>` blocks in `README.md` |
-| Theme-aware artwork | Supports GitHub light and dark themes | `<picture>` blocks in `README.md` |
+| Consistent matte artwork | Keeps the artwork light in both GitHub themes | `<picture>` blocks in `README.md` |
 | Mobile diagrams | Uses larger labels and vertical flows on screens up to 600px wide | `assets/*-mobile-*.svg` |
 
 The diagrams describe documented architecture. They are diagrams, not
@@ -71,7 +73,7 @@ technologies used in the projects. To add another badge, generate it with
 For example, this is the direct Python badge source:
 
 ```markdown
-![Python](https://img.shields.io/badge/Python-243a5c?style=flat-square&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-BC8F8F?style=flat-square&logo=python&logoColor=292326)
 ```
 
 The live profile uses the committed version:
@@ -126,7 +128,7 @@ bottom. This optional service visualizes the last 31 days of activity:
 ```markdown
 ## Recent activity
 
-[![Pranav's recent GitHub activity](https://github-readme-activity-graph.vercel.app/graph?username=pirlapal&bg_color=101d35&color=f5f0e8&line=e8a06a&point=f1bf97&area=true&hide_border=true)](https://github.com/pirlapal)
+[![Pranav's recent GitHub activity](https://github-readme-activity-graph.vercel.app/graph?username=pirlapal&bg_color=BC8F8F&color=292326&line=5a3e46&point=E2C9C5&area=true&hide_border=true)](https://github.com/pirlapal)
 ```
 
 Source and configuration:
