@@ -11,7 +11,7 @@
 **Software engineer focused on GenAI applications, backend systems,
 and workflow automation.**
 
-[Email](mailto:irlapalepranav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pranav-irlapale) · [Selected projects](#selected-projects)
+[Portfolio](https://pranavirlapale.netlify.app/) · [Email](mailto:irlapalepranav@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pranav-irlapale) · [Selected projects](#selected-projects)
 
 I'm pursuing an MS in Software Engineering at Arizona State University,
 with an expected graduation in May 2027.
@@ -20,10 +20,25 @@ I build applications that connect AI models, backend services, and
 interfaces people can use. My projects include document-review agents,
 a recruiter dashboard, and a programming-language interpreter.
 
-My experience also includes reporting dashboards and content-workflow
-automation at ASU's AI CIC.
+At ASU's AI CIC, my work includes AWS/Bedrock application workflows,
+reporting dashboards, technical demos, and content-workflow automation.
 
 ## Selected projects
+
+### [AI Content Studio](https://pranavirlapale.netlify.app/#project-12)
+
+A local React/Node.js workspace that turns PDF and DOCX source text into
+structured article drafts using Claude through Amazon Bedrock, with
+human review, browser-based version history, and HTML export.
+
+**My role:** Built the document-processing workflow, model integration,
+session-protected APIs, and review/export experience.
+
+**Stack:** React, Vite, JavaScript, Node.js, and Amazon Bedrock.
+
+[Read the implementation case study (PDF)](https://pranavirlapale.netlify.app/ai-content-studio-case-study.pdf).
+The source is private; the case study describes the local application's
+scope and design choices.
 
 ### [PlanAI — AI Agent Swarm Checker](https://github.com/pirlapal/AI-agent-Swarm-checker)
 
@@ -38,7 +53,8 @@ automation at ASU's AI CIC.
 A document-review prototype that lets users define review rules,
 attach documents, and follow agent progress and structured findings.
 
-**My role:** Co-creator in a two-person Kiro Spark Challenge team.
+**My role:** Led team development from core system design and architecture
+through implementation for the Kiro Spark Challenge.
 
 **Stack:** Python, TypeScript, Next.js, AWS CDK, Lambda, API Gateway,
 DynamoDB, S3, and Bedrock AgentCore.
@@ -147,6 +163,7 @@ working closely with users, and integrating AI into existing workflows.
 
 ## Let's connect
 
+- [Portfolio](https://pranavirlapale.netlify.app/)
 - [Email](mailto:irlapalepranav@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/pranav-irlapale)
 
